@@ -1,0 +1,38 @@
+# do run.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Modifying modelsim.ini
+# Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+# -- Compiling interface axiInterface
+# -- Compiling interface apbInterface
+# ** Warning: apbInterface.sv(54): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: apbInterface.sv(56): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling module coreBridge
+# -- Compiling module bridgeTop
+# 
+# Top level modules:
+# 	bridgeTop
+# vsim -t 1ns -novopt bridgeTop 
+# Loading sv_std.std
+# Loading work.bridgeTop
+# Loading work.axiInterface
+# Loading work.apbInterface
+# Loading work.coreBridge
+# ** Warning: (vsim-8311) System Verilog assertions are supported only in Questasim.
+# === Test Started! ===
+# 2. Starting AXI read...
+# Starting AXI read from address a5a5a5a5
+# APB Read: address a5a5a5a5
+# Read complete: data 10100101101001011011011111011001, response 00
+# 2. Read completed!
+# === Test Passed! ===
+# ** Note: $finish    : bridgeTop.sv(238)
+#    Time: 1105 ns  Iteration: 0  Instance: /bridgeTop
+# 1
+# Break in Task testSequence at bridgeTop.sv line 238
+# Simulation Breakpoint: 1
+# Break in Task testSequence at bridgeTop.sv line 238
+# MACRO ./run.do PAUSED at line 13

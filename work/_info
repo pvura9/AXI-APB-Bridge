@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\pvura_gth4vk7\OneDrive\Desktop\Personal Projects\AXI4-Lite to APB3 Bridge
+YapbInterface
+Z1 Mx1 6 sv_std 3 std
+Z2 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+IG2n_4;@L<ID8WezfozAzn3
+VK7Al:IGT0aGRRL1TV_EV]1
+S1
+w1753822324
+8apbInterface.sv
+FapbInterface.sv
+L0 8
+Z3 OV;L;6.3g_p1;37
+r1
+!s85 0
+31
+Z4 o-sv -O0
+napb@interface
+YaxiInterface
+R1
+R2
+Ia]kT2c=7g2Qo88`KbYcQE0
+V:b3Z0Ee:Ii<kbA71g6S7`0
+S1
+w1753825603
+8axiInterface.sv
+FaxiInterface.sv
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+naxi@interface
+vbridgeTop
+R1
+R2
+IN`YH][GC9z2c=WnDkJgj52
+V4bYO4o>eA8Zj4cYUZmZIF3
+S1
+w1754259085
+Z5 8bridgeTop.sv
+Z6 FbridgeTop.sv
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+nbridge@top
+XbridgeTop_sv_unit
+R1
+R2
+Vz[=@kGAKg:`aT9?ILU01[2
+r1
+31
+Iz[=@kGAKg:`aT9?ILU01[2
+S1
+w1753821838
+R5
+R6
+L0 1
+R3
+R4
+nbridge@top_sv_unit
+!s85 0
+vcoreBridge
+R1
+R2
+I[7SgbBZ5iKaLOd_0hDVTS1
+Vk;^:@VAO<aKM>_lXb>B^23
+S1
+w1754176984
+8coreBridge.sv
+FcoreBridge.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+ncore@bridge
