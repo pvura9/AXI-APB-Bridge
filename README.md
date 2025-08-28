@@ -30,19 +30,13 @@ This bridge project assumes the use of the AXI4-Lite and APB3 protocols, both of
 - The system operates on a single clock domain, with all AXI and APB transactions synchronized to the same global clk signal. This simplifies the timing requirements and eliminates the need for CDC logic.
 
 - Clock
-    <br>
     - A free running clock is modeled in the testbench with a 10 ns period (100 MHz), generated with a toggling ```always #5 clk = ~clk;``` process
-    <br>
     - All handshaking, state transitions, and signal updates are triggered on the rising edge of the clk.
-    <br>
     - Both protocols pay respect to the same system clock signal. Ideally, the APB3 devices would use a slower clock. That has not been respected in this project but can be implemented with simple RTL divider logic.
 
 - Reset
-    <br>
     - An active high asynchronous reset is used to initialize the system.
-    <br>
     - The reset signal is asserted for a few cycles after the simulation begins and is then deasserted.
-    <br>
     - Modules are expected to initialize their outputs to known default values on the reset. 
 
 - These assumptions were reflected in the Verilog testbench and verified through waveform simulations to ensure correct behavior and protocol timing under a single clock domain.
