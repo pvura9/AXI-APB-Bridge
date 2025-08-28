@@ -15,23 +15,15 @@ My design includes custom interface definitions for both AXI4-Lite and APB3, a c
 This bridge project assumes the use of the AXI4-Lite and APB3 protocols, both of which are simplified subsets of their full-featured counterparts. To streamline the design, the following assumptions were made:
 
 - AXI4-Lite
-    <br>
     - Only single beat transfers are supported. Burst and lock features have not been implemented here but may be in an expanded future version.
-    <br>
     - ```AWPROT```, ```AWCACHE```, ```ARPROT```, and ```ARCACHE```  signals are not used here, as they are not critical for basic memory-mapped transactions.
-    <br>
     - Write strobes are supported to allow for byte-level granularity during write transactions. Since I assumed 32-bit data transfer, the write strobes were 4-bits wide.
-    <br>
     - Response channels are EXPLICITLY declared as ```OKAY``` or ```SLVERR``` in this current implementation. Error signaling may be expanded in the future.
-    <br>
     - Backpressure is respected on all handshakes across the five AXI channels.
 
 - APB3 Protocol
-    <br>
     - A simplified model of APB3 is used with basic handshaking (```PSEL```, ```PENABLE```, ```PREADY```).
-    <br>
     - Address, write, and read data widths are fixed at 32 bits as per my research on common bit width.
-    <br>
 - These assumptions simplify the bridge and make it suitable for simple peripheral interfacing in low-complexity systems and lay a good foundation for me to expand into more robust protocols in the future.
 
 ### Clocking / Reset Assumptions
